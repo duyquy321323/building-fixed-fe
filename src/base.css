@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-Inter: "Inter", sans-serif;
+    --font-PublicSan: "Public Sans", sans-serif;
+    --color-text-black: #1E2640;
+    --color-text-grey: #889099;
+    --color-text-white: #fff;
+    --color-light-blue: #EDEFF6;
+    --color-dark-blue: #4A60A1;
+    --color-bg-linear: linear-gradient(180deg, rgba(59, 77, 129, 0.70) -12.86%, rgba(59, 77, 129, 0.00) 106.85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-Inter);
+}
+
+.btn {
+    padding: 12px 24px;
+}

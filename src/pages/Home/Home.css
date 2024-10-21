@@ -1,0 +1,136 @@
+/* Home */
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/image/Background.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero .hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 48, 83, 0.60);
+}
+
+.hero .hero-title {
+    color: #fff;
+    font-size: 5.2rem;
+    font-family: var(--font-PublicSan);
+    line-height: 1.38;
+}
+
+.hero .box-head {
+    z-index: 1;
+}
+
+.hero .hero-subtitle {
+    color: #EDEFF6;
+}
+
+/* End Hero */
+
+/* Propertice */
+.propertice {
+    padding: 150px 0;
+}
+
+.propertice .propertice-bottom {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.propertice .propertice-bottom .propertice-item {
+    border-radius: 8px;
+    width: 100%;
+    height: 241px;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.propertice .propertice-bottom .propertice-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.propertice .propertice-bottom .propertice-item.item-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.propertice .propertice-item:hover .propertice-background {
+    opacity: 1;
+}
+
+.propertice .propertice-item .propertice-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: var(--color-bg-linear);
+    transition: all .4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propertice .propertice-item .propertice-btn {
+    border: 1px solid #fff;
+    color: var(--color-text-white);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.propertice .propertice-item:hover .propertice-content {
+    top: 24px;
+}
+
+.propertice .propertice-item .propertice-content {
+    position: absolute;
+    top: -100%;
+    left: 24px;
+    color: var(--color-text-white);
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+.propertice .propertice-item:hover .propertice-icon {
+    bottom: 24px;
+}
+
+.propertice .propertice-item .propertice-icon {
+    position: absolute;
+    bottom: -100%;
+    left: 24px;
+    color: var(--color-text-white);
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    transition: all .4s ease-in-out;
+}
+
+.propertice .propertice-item .propertice-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.048px;
+    margin-bottom: 11px;
+}
+
+/* End Propertice */
+
+/* End Home */
