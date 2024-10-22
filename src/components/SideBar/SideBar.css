@@ -1,0 +1,88 @@
+.sidebar-box {
+  width: 88%;
+  height: 530px;
+  margin-left: 142px;
+  display: flex;
+}
+
+.client-container{
+    width: 430px;
+    height: 492px;
+    position: relative;
+}
+
+.circle{
+    height: 226px;
+    width: 226px;
+    border-radius: 50%;
+    filter: blur(158.5px);
+    position: absolute;
+}
+
+.circle1{
+    background-color: #DDA82A;
+    opacity: 0.45;
+    left: 0px;
+    top: 0px;
+    
+}
+
+.circle2{
+    background-color: #4461F2;
+    right: 0px;
+    bottom: 0px;
+}
+
+.intro{
+    position: absolute;
+    top: 90px;
+    left: 57px;
+    display: flex;
+    flex-flow: column;
+}
+
+.title-log{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 77px;
+    font-family: var(--font-PublicSan);
+    width: 607px;
+    font-style: normal;
+}
+
+.content-log{
+    padding-top: 77px;
+    font-family: var(--font-PublicSan);
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.register-nav{
+    font-weight: 700;
+}
+
+.content-log a{
+    text-decoration: none;
+    color: #4461F2;
+}
+
+.img-container{
+    align-self: flex-end;
+    margin-left: auto;
+    width: 545px;
+    height: 449px;
+}
+
+.register-nav{
+    padding: 20px;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.no-select{
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

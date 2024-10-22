@@ -1,51 +1,57 @@
 import LayoutDefault from "../components/layouts/LayoutDefault";
-import Home from "../pages/Home";
-import Project from "../pages/Project";
-import News from "../pages/News";
+import LayoutLogin from "../components/layouts/LayoutLogin";
 import Contact from "../pages/Contact";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Home from "../pages/Home";
 import Introduce from "../pages/Introduce";
+import Login from "../pages/Login";
+import News from "../pages/News";
+import Project from "../pages/Project";
+import Register from "../pages/Register";
 
 export const routes = [
-    {
-        path: '/',
-        element: <LayoutDefault />,
-        children: [
-            {
-                path: '/',
-                element: <Home />
-            },
+  {
+    path: "/",
+    element: <LayoutDefault />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
 
-            {
-                path: '/project',
-                element: <Project />
-            },
+      {
+        path: "/project",
+        element: <Project />,
+      },
 
-            {
-                path: '/news',
-                element: <News />
-            },
+      {
+        path: "/news",
+        element: <News />,
+      },
 
-            {
-                path: '/contact',
-                element: <Contact />
-            },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
 
-            {
-                path: '/introduce',
-                element: <Introduce />
-            },
-        ]
-    },
+      {
+        path: "/introduce",
+        element: <Introduce />,
+      },
+    ],
+  },
 
-    {
-        path: '/login',
-        element: <Login />
-    },
-
-    {
-        path: '/register',
-        element: <Register />
-    }
-]
+  {
+    path: "/",
+    element: <LayoutLogin />,
+    children: [
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+    ],
+  },
+];

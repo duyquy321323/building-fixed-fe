@@ -1,0 +1,29 @@
+.register-container {
+  margin-right: 199px;
+  margin-top: 68px;
+  font-size: 18px;
+  font-family: var(--font-PublicSan);
+  font-weight: 500;
+  letter-spacing: 1.62px;
+  color: #4f555a;
+}
+
+.register-submit{
+    margin-top: 31px;
+}
+
+.rg-other{
+    margin-top: 30px;
+}
+
+.rg-other::before{
+    top: 627px;
+}
+
+.rg-other::after{
+    top: 627px;
+}
+
+.login-list{
+    margin-bottom: 100px;
+}

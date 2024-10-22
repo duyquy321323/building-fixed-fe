@@ -1,0 +1,136 @@
+.login-container {
+  margin-right: 199px;
+  margin-top: 227px;
+  font-size: 18px;
+  font-family: var(--font-PublicSan);
+  font-weight: 500;
+  letter-spacing: 1.62px;
+  color: #4f555a;
+}
+
+.login-form-container {
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  position: relative;
+}
+
+.inp {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--color-light-purple);
+  border: 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.login-forget {
+  margin-bottom: 56px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.login-forget a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.login-link-fg {
+  margin-left: auto;
+}
+
+.login-submit {
+  background: #4461f2;
+  box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.71px;
+}
+
+.login-submit:hover {
+  cursor: pointer;
+}
+
+.login-other {
+  margin: 45px auto;
+  color: #acadac;
+  font-size: 14px;
+  letter-spacing: 1.26px;
+}
+
+.login-other::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 1px;
+  left: 0;
+  top: 360px;
+  background: #dfdfdf;
+}
+
+.login-other::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 1px;
+  top: 360px;
+  right: 0;
+  background: #dfdfdf;
+}
+
+.login-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-icon {
+  border-radius: 10px;
+  /* width: 117px;
+  height: 60px; */
+  padding: 16px 44.5px;
+  border: 1px solid #dfdfdf;
+}
+
+.apple {
+  background-color: #ffffff;
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.input-container {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 26px;
+  top: 21px;
+  cursor: pointer;
+}
+
+.helper-text {
+  color: red;
+}
+
+.fa-exclamation {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  color: red;
+}
+
+.active-inp {
+  border: 2px solid red;
+}
+
+.no-select{
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

@@ -1,0 +1,11 @@
+.layout-container{
+    display: flex;
+}
+
+.sidebar-container{
+    width: 63%;
+}
+
+.content-container{
+    flex: 1;
+}
