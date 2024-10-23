@@ -1,0 +1,88 @@
+.select-op {
+  width: auto;
+  height: 24px;
+}
+
+.container-fil-prj {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-fil-prj .selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--Primary-700, #2c3a61);
+  /* Heading/Heading - 5 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+
+.selection .number-page {
+  margin-left: 0;
+}
+
+.selection .select-btn {
+  padding-left: 0;
+  color: var(--Gray-400, #889099);
+  text-align: center;
+  /* Body/Regular/400 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border: none;
+  padding-right: 30px;
+  border-radius: 4px;
+  padding-bottom: 30px;
+}
+
+.selection .select-btn:hover{
+    background-color: #eeeff0;
+}
+
+.container-fil-prj:hover{
+    cursor: pointer;
+    background: #eeeff0;
+}
+
+.selection .dropdown-ico {
+  top: 12px;
+  right: 10px;
+}
+
+.selection .dropdown {
+  top: 96px;
+  width: 188px;
+  font-size: 25px;
+}
+
+.selection::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 64px;
+    width: 1px;
+    right: -45px;
+    top: 10px;
+    background: #CFD3D6;
+}
+
+.container-fil-prj.focus{
+    background-color: #eeeff0;
+}
+
+.selection .option-select{
+    height: 40px;
+    padding-top: 10px;
+    font-weight: 400;
+    color: #686868;
+}

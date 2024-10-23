@@ -28,7 +28,7 @@ function SideBar() {
             <div className="content-log">
               <pre className="no-select">
                 {path === "/register" ? content_rg_line : content_lg_line}
-                <NavLink className="register-nav" to="">
+                <NavLink className="register-nav" to={path === "/register" ? "/login" : "register"}>
                   {" "}
                   {path === "/login"? "Register here!" : "Login here!"}
                 </NavLink>

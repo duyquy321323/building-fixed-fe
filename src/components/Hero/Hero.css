@@ -1,0 +1,27 @@
+.hero-intro {
+  background: url("../../assets/image/Rectangle 28.png") center/cover no-repeat;
+  height: 240px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  /* Display */
+  font-family: "Public Sans";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 138.462% */
+}
+
+.intro-title p {
+  color: var(--Gray-50, #e7e9eb);
+  text-align: center;
+  /* Body/Regular/400 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

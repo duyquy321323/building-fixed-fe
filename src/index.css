@@ -62,8 +62,6 @@ tbody,
 tfoot,
 thead,
 tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -79,6 +77,8 @@ nav,
 output,
 ruby,
 section,
+th,
+td,
 summary,
 time,
 mark,
@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 

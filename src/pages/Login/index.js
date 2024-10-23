@@ -1,11 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
 import AppleIcon from "../../assets/image/Shape.svg";
 import GoogleIcon from "../../assets/image/Wrapper.svg";
 import BlockEye from "../../assets/image/blockeye.svg";
 import FacebookIcon from "../../assets/image/facebook.svg";
 import ShowEye from "../../assets/image/showeye.svg";
-
-import { useState } from "react";
+import { login } from "../../components/actions";
+import api from "../../components/api";
 import "./Login.css";
 
 function Login() {
@@ -14,13 +16,24 @@ function Login() {
     username: "",
     password: "",
   });
+  const navigate = useNavigate();
   const [event, setEvent] = useState({
     username: false,
     password: false,
   });
-  function handleSubmit(e) {
+  const dispatch = useDispatch();
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log(e);
+    try {
+      const response = await api.post("account/login", userInfo);
+      dispatch(login(response.data));
+      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("expiryTime", response.data.expiryTime);
+      navigate('/');
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
   }
   function handleChange(e) {
     const { name, value } = e.target;

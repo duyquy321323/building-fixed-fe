@@ -1,0 +1,43 @@
+.head-main {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  margin-bottom: 38.5px;
+}
+
+.search-bar-component {
+  width: 83%;
+  height: 42px;
+  position: relative;
+}
+
+.search-ico {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  left: 50px;
+}
+
+.search-inp {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--basic-color-2-variant, #0061ff);
+  border-radius: 10px;
+  padding-left: 105px;
+}
+
+.search-inp::placeholder {
+  color: var(--basic-color-2-variant, #0061ff);
+  font-family: "Work Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.filter{
+  cursor: pointer;
+}

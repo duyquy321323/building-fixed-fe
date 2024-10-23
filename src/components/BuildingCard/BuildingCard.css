@@ -1,0 +1,74 @@
+.container-building-card {
+  width: 424px;
+  height: 515px;
+  display: flex;
+  flex-direction: column;
+  gap: 25.7px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.container-building-card .content-card {
+  width: 372.6px;
+  display: flex;
+  flex-direction: column;
+  gap: 17.13px;
+}
+
+.container-building-card .content-card .address-card {
+  color: var(--Gray-700, #363a3d);
+  font-family: Inter;
+  font-size: 21.414px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29.98px; /* 140% */
+}
+
+.container-building-card .content-card .price-card {
+  color: var(--Primary-500, #4a60a1);
+  /* Body/Large/600 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+}
+
+.content-card .detail-card {
+  display: flex;
+  gap: 25.7px;
+  align-items: center;
+}
+
+.detail-card .item-detail-card {
+  display: flex;
+  gap: 6.42px;
+  align-items: center;
+}
+
+.content-card .user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17.13px;
+  position: relative;
+}
+
+.user-card .detail-user-card {
+  display: flex;
+  gap: 8.57px;
+  align-items: center;
+}
+.user-card .detail-user-card::after {
+  position: absolute;
+  content: "";
+  width: 372.608px;
+  height: 1.071px;
+  background: #e7e9eb;
+  top: -17.13px;
+  left: 0;
+}
+
+.user-card .ic{
+    cursor: pointer;
+}

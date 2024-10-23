@@ -1,0 +1,101 @@
+.container-content-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 40.45%;
+  height: 358px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-user .user {
+  display: flex;
+  justify-content: space-between;
+  gap: 8.57px;
+  align-items: center;
+}
+
+.user img {
+  height: 50px;
+  width: 50px;
+}
+
+.user p {
+  color: var(--Gray-700, #363a3d);
+  text-align: center;
+  font-family: Inter;
+  font-size: 17.131px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.697px; /* 150% */
+}
+
+.icon-action {
+  display: flex;
+  gap: 12.85px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-action .ic {
+  background-color: var(--Primary-50, #edeff6);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  color: var(--Gray-400, #889099);
+  /* Body/Regular/400 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.content .address {
+  color: var(--Primary-500, #4a60a1);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.048px;
+}
+
+.lorem2 pre {
+  color: var(--Primary-500, #4a60a1);
+  /* Body/Regular/600 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  display: inline;
+}
+
+.price-intro-post {
+  color: var(--Primary-500, #4a60a1);
+  /* Heading/Heading - 2 */
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+}

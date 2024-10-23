@@ -1,0 +1,78 @@
+.container-filter {
+  position: fixed;
+  width: 579px;
+  height: 100vh;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 4px 9px 0px rgba(152, 160, 180, 0.25);
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  color: #4b4b4b;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+  right: -100%;
+  z-index: 1;
+}
+
+.close-filter {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.close-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.close-block img {
+  width: 15.76px;
+  height: 15.76px;
+}
+
+.title-filter {
+  width: 549px;
+  height: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-filter {
+  width: 549px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 41px;
+}
+
+.container-field {
+  color: #98a0b4;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.value-field input {
+  height: 38px;
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+  color: #98a0b4;
+  font-size: 14px;
+  font-weight: 500;
+}

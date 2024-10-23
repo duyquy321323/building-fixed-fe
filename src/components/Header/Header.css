@@ -85,4 +85,12 @@
   text-shadow: 1px 0px black;
 }
 
+.active_ad{
+  margin: 0 auto;
+}
+
+.login-btn{
+  padding: 10px;
+}
+
 /* End Header */

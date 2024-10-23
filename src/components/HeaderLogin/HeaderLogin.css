@@ -1,53 +1,67 @@
 body {
-    background-color: #f6f6f6;
-  }
-  
-  .nav {
-    margin-top: 99px;
-    padding-right: 199px;
-  }
-  
-  .list-nav {
-    display: flex;
-    justify-content: end;
-    gap: 6px;
-  }
-  
-  .list-nav a{
-      text-decoration: none;
-  }
-  
-  .list-nav a.active{
-      background-color: #f6f6f6;
-      box-shadow: none;
-      position: relative;
-  }
-  
-  .list-nav a.active p::after{
-      background-color: #4461f2;
-      box-shadow: none;
-      position: absolute;
-      content: "";
-      width: 26px;
-      bottom: 3px;
-      left: 27px;
-      height: 3px;
-      border-radius: 20px;
-  }
-  
-  .tag {
-    border-radius: 21px;
-    background: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-    width: 112px;
-    height: 42px;
-    color: #4461f2;
-    font-family: var(--font-PublicSan);
-    font-weight: 700;
-    letter-spacing: 0.96px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  background-color: #f6f6f6;
+}
+
+.nav {
+  margin-top: 99px;
+  padding-right: 199px;
+}
+
+.list-nav {
+  display: flex;
+  justify-content: end;
+  gap: 6px;
+}
+
+.list-nav a {
+  text-decoration: none;
+}
+
+.list-nav a.active {
+  background-color: #f6f6f6;
+  box-shadow: none;
+  position: relative;
+}
+
+.list-nav a.active p::after {
+  background-color: #4461f2;
+  box-shadow: none;
+  position: absolute;
+  content: "";
+  width: 26px;
+  bottom: 3px;
+  left: 27px;
+  height: 3px;
+  border-radius: 20px;
+}
+
+.tag {
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  width: 112px;
+  height: 42px;
+  color: #4461f2;
+  font-family: var(--font-PublicSan);
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag.home {
+  margin-right: auto;
+  margin-left: 199px;
+  justify-content: flex-start;
+  background-color: inherit;
+  box-shadow: none;
+  color: #000;
+  font-family: var(--font-PublicSan);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.02px;
+}

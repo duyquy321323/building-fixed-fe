@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import HeaderLogin from "../../HeaderLogin";
 import SideBar from "../../SideBar";
-import "./LayoutLogin.css"
+import "./LayoutLogin.css";
 
 function LayoutLogin() {
   return (

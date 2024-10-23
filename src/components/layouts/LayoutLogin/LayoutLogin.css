@@ -1,11 +1,17 @@
-.layout-container{
-    display: flex;
+.layout-container {
+  display: flex;
+  font-family: var();
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.02px;
 }
 
-.sidebar-container{
-    width: 63%;
+.sidebar-container {
+  width: 63%;
 }
 
-.content-container{
-    flex: 1;
+.content-container {
+  flex: 1;
 }
