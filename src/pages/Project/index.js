@@ -18,17 +18,17 @@ import "./Project.css";
 function Project() {
   const filter = [
     {
-      field: "Vị Trí",
+      field: "Position",
       placeHolder: "Select your city",
-      arrayOption: ["HCM", "HN", "TTH"],
+      arrayOption: ["Ho Chi Minh", "Ha Noi", "Thua Thien Hue"],
     },
     {
-      field: "Diện Tích Thuê",
+      field: "Rent Area",
       placeHolder: "Select property type",
       arrayOption: ["100", "200", "300", "400"],
     },
     {
-      field: "Giá Thuê",
+      field: "Price Area",
       placeHolder: "Select rent range",
       arrayOption: ["30", "50", "100"],
     },
@@ -135,7 +135,7 @@ function Project() {
   ];
   return (
     <>
-      <Hero title="DỰ ÁN BẤT ĐỘNG SẢN" content="Home/Dự án bất động sản" />
+      <Hero title="PROJECTS" content="Home/Projects" />
       <div className="main-container-project">
         <div className="nav-tag">
           <div className="rent">

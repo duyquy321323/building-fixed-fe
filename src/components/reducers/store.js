@@ -8,9 +8,8 @@ const allReducers = combineReducers({
 // Hàm lưu trạng thái user lại
 function saveUserToLocalStore(state) {
   try {
-    if(state.account)
-        localStorage.setItem("reduxState", JSON.stringify(state.account));
-
+    if (state.account)
+      localStorage.setItem("reduxState", JSON.stringify(state.account));
   } catch (e) {
     console.log(e);
   }
@@ -20,7 +19,7 @@ function saveUserToLocalStore(state) {
 function loadUserToLocalStore() {
   try {
     const init = localStorage.getItem("reduxState");
-    if(init) return init;
+    if (init) return init;
     else return undefined;
   } catch (e) {
     console.log(e);

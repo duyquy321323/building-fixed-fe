@@ -55,7 +55,7 @@ function News() {
   ];
   return (
     <>
-      <Hero title="TIN TỨC" content="Home/Tin tức" />
+      <Hero title="NEWS" content="Home/News" />
       <section className="hero-two">
         <div className="frame-news">
           <pre className="title-news">{title}</pre>

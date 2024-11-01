@@ -8,6 +8,7 @@
 }
 
 .component-table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   text-align: left;
@@ -202,4 +203,14 @@ td {
 
 .visible{
   visibility: hidden;
+}
+
+.data-format{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.full-cell{
+  overflow-x: auto;
 }

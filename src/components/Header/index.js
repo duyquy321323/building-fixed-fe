@@ -112,17 +112,17 @@ function Header() {
             >
               {isAdminPage ? (
                 <>
-                  <NavLink to="/building-management">QUẢN LÝ TÒA NHÀ</NavLink>
-                  <NavLink to="/introduce">QUẢN LÝ KHÁCH HÀNG</NavLink>
-                  <NavLink to="/project">QUẢN LÝ TÀI KHOẢN</NavLink>
+                  <NavLink to="/building-management">Building Management</NavLink>
+                  <NavLink to="/introduce">Customer Management</NavLink>
+                  <NavLink to="/project">Account Management</NavLink>
                 </>
               ) : (
                 <>
                   <NavLink to="/">HOME</NavLink>
-                  <NavLink to="/introduce">GIỚI THIỆU</NavLink>
-                  <NavLink to="/project">DỰ ÁN BẤT ĐỘNG SẢN</NavLink>
-                  <NavLink to="/news">TIN TỨC</NavLink>
-                  <NavLink to="/contact">LIÊN HỆ</NavLink>
+                  <NavLink to="/introduce">INTRODUCE</NavLink>
+                  <NavLink to="/project">PROJECTS</NavLink>
+                  <NavLink to="/news">NEWS</NavLink>
+                  <NavLink to="/contact">CONTACT</NavLink>
                 </>
               )}
             </div>

@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <Hero title="LIÊN HỆ" content="Home/Liên hệ" />
+      <Hero title="CONTACT" content="Home/Contact" />
       <div className="container-contact">
         <section className="image-contact">
           <h2 className="title-contact">Our Team</h2>

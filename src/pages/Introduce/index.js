@@ -100,7 +100,7 @@ function Introduce() {
 
   return (
     <>
-      <Hero title="GIỚI THIỆU" content="Home/Giới thiệu" />
+      <Hero title="INTRODUCE" content="Home/Introduce" />
       <section className="main-intro">
         <div className="top-intro">
           <div className="left-top-intro">

@@ -4,8 +4,8 @@ import ArrowLeftIcon from "../../assets/image/Vector 19.svg";
 import ArrowRightIcon from "../../assets/image/Vector 20.svg";
 import DrowdownIcon from "../../assets/image/chevron.svg";
 import ArrowUp from "../../assets/image/up-arrow.png";
-import "./Table.css";
 import Filter from "../Filter";
+import "./Table.css";
 
 function Table(props) {
   const { headTables, dataTables } = props;
@@ -20,7 +20,6 @@ function Table(props) {
 
   const inpAll = useRef(0);
   useEffect(() => {
-    console.log(inpAll);
     const inpData = document.querySelectorAll(".inp-data");
     if (inpAll.current) {
       inpAll.current.addEventListener("click", (e) => {
@@ -29,11 +28,11 @@ function Table(props) {
         }
       });
     }
-  }, []);
+  }, [dataTables]);
 
   useEffect(() => {
     setPages(Math.ceil(Array.from(dataTables).length / pageNumber));
-  }, [pageNumber]);
+  }, [pageNumber, dataTables]);
 
   function handleClick() {
     const inpData = document.querySelectorAll(".inp-data");
@@ -45,6 +44,17 @@ function Table(props) {
     }
     inpAll.current.checked = true;
   }
+
+  useEffect(() => {
+    const cells = document.querySelectorAll(".data-format");
+    for (let cell of cells) {
+      if (cell instanceof HTMLElement)
+        cell.addEventListener("click", function () {
+          cell.style.overflowX = "auto";
+          cell.style.textOverflow = "inherit";
+        });
+    }
+  }, [dataTables]);
 
   return (
     <>
@@ -91,13 +101,15 @@ function Table(props) {
                         onClick={handleClick}
                       />
                     </td>
-                    {Array.isArray(dataTable) ? (
-                      Array.from(dataTable).map((data, index) => {
-                        return <td key={index}>{data}</td>;
-                      })
-                    ) : (
-                      <></>
-                    )}
+                    {Object.entries(dataTable).map((data, index) => {
+                      return (
+                        <td key={index} className={"data-format"}>
+                          {Array.from(headTables).map((value) =>
+                            value.name === data[0] ? data[1] : <></>
+                          )}
+                        </td>
+                      );
+                    })}
                   </tr>
                 );
               })}

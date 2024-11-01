@@ -13,7 +13,6 @@ function SideBar() {
   useEffect(() => {
     setPath(location.pathname);
   }, [location.pathname]);
-  console.log(path);
   return (
     <>
       <div className="sidebar-box">
